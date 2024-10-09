@@ -6,7 +6,7 @@
 				"abbreviation": "MXHB",
 				"full": "Nagavarii Race",
 				"authors": [
-					"Marrix"
+					"Marrix2"
 				],
 				"version": "1.0",
 				"url": "",
@@ -98,7 +98,7 @@
 				{
 					"name": "Magical Dexterity",
 					"entries": [
-						"You learn the mage hand cantrip and it does not count against your number of cantrips known."
+						"You can summon a floating magical hand that reflects your race's connection to magic. You learn the mage hand cantrip and it does not count against your number of cantrips known."
 					],
 					"type": "entries"
 				},

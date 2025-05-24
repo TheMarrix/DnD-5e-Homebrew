@@ -1,0 +1,254 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MHB",
+				"abbreviation": "MHB",
+				"full": "Warrior of the Four Elements",
+				"authors": [
+					"Marrix"
+				],
+				"convertedBy": [
+					"Marrix"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 154427021,
+		"dateLastModified": 1729630006,
+		"_dateLastModifiedHash": "d59081af38",
+		"edition": "classic"
+	},
+	"optionalfeature": [
+		{
+			"name": "Dragon Turtles Shell",
+			"source": "MHB",
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"The elements swirl around your weapon. When you take fire, cold, or thunder damage, you can spend 1 Focus point to cast {@spell Absorb Elements|phb}."
+			]
+		},
+		{
+			"name": "Dragon Turtles Shell",
+			"source": "MHB",
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"You summon a swirling wind and concentrate it around your fist. When you make an unarmed attack on your turn, you can choose to strike out condensed bursts of air which stretch out beyond your normal reach. Your reach increases by 10 feet for that attack. If the attack hits you can spend 1 Focus point to force the target to make a Strength saving throw or be pushed back 10 feet and be knocked prone."
+			]
+		},
+		{
+			"name": "Enduring Mountain Stance",
+			"source": "MHB",
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"Your body and mind become as rigid and unyielding as the ground below you. When you take the Dodge action, you can choose to root yourself in place. If you do, you cannot move until the start of your next turn, but you also cannot be moved, pushed, grappled, frightened, or knocked prone against your will, even if magically compelled. You must be standing on the ground to use this ability."
+			]
+		},
+		{
+			"name": "Fangs of the Fire Snake",
+			"source": "MHB",
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"Your arms and legs become enveloped in roaring gouts of flame. When you use the Attack action on your turn, you can spend 1 Focus point to cause tendrils of flame to stretch out from your fists and feet. Your unarmed strikes deal an additional 1d4 damage and their reach increases by 5 feet. A hit with such an attack deals 1d4 extra damage and deals fire damage instead of bludgeoning damage until the end of the turn."
+			]
+		},
+		{
+			"name": "Fist of Four Thunders",
+			"source": "MHB",
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"You slam your fists together in front of you, causing a thunderous boom that blows away everything around you. You can spend 1 Focus point to cast {@spell Thunderwave|phb}."
+			]
+		},
+		{
+			"name": "Shape the Raincloud",
+			"source": "MHB",
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"You can spend 1 Focus point to cast {@spell Create or Destroy Water|phb}."
+			]
+		},
+		{
+			"name": "Water Whip",
+			"source": "MHB",
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"You can spend 1 Focus point as an action to create a whip of water that shoves and pulls a creature to unbalance it. A creature that you can see that is within 30 feet of you must make a Dexterity saving throw. On a failed save, the creature takes 3d10 bludgeoning damage, plus an extra 1d10 bludgeoning damage for each additional Focus point you spend, and you can either knock it {@condition Prone|phb} or pull it up to 25 feet closer to you. On a successful save, the creature takes half as much damage, and you don't pull it or knock it {@condition Prone|phb}."
+			]
+		},
+		{
+			"name": "Clench of the North Wind",
+			"source": "MHB",
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Monk"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You can spend 2 Focus points to cast {@spell Hold Person|phb}."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Warrior of the Four Elements",
+			"subclassFeatures": [
+				"Warrior of the Four Elements|Monk||Warrior of the Four Elements|MHB|3",
+				"Advanced Elemental Disciplines|Monk||Warrior of the Four Elements|MHB|6",
+				"Master of the Elements|Monk||Warrior of the Four Elements|MHB|11",
+				"Legendary Elemental Disciplines|Monk||Warrior of the Four Elements|MHB|17"
+			],
+			"source": "MHB",
+			"shortName": "Four Elements",
+			"className": "Monk",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Warrior of the Four Elements",
+			"source": "MHB",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Warrior of the Four Elements",
+			"subclassSource": "MHB",
+			"level": 3,
+			"entries": [
+				"You follow a monastic tradition that teaches you to harness the elements. When you focus your Focus, you can align yourself with the forces of creation and bend the four elements to your will, using them as an extension of your body. Some members of this tradition dedicate themselves to a single element, but others weave the elements together.",
+				"Many monks of this tradition tattoo their bodies with representations of their Focus powers, commonly imagined as coiling dragons, but also as phoenixes, fish, plants, mountains, and cresting waves.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Initiate of the Way|Monk||Warrior of the Four Elements|MHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Disciple of the Elements|Monk||Warrior of the Four Elements|MHB|3"
+				}
+			]
+		},
+		{
+			"name": "Initiate of the Way",
+			"entries": [
+				"You know the {@spell Elementalism|xphb} spell. Wisdom is your spellcasting ability for it. In addition, you gain proficiency in the {@skill Nature} skill and gain a bonus to your Intelligence {@skill Nature} checks equal to your Wisdom modifier (minimum bonus of +1)."
+			],
+			"source": "MHB",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Warrior of the Four Elements",
+			"subclassSource": "MHB",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Disciple of the Elements",
+			"entries": [
+				"At 3rd level, you learn {@filter Elemental Disciplines|optionalfeatures|Feature Type=ED} that harness the power of the four elements. Some disciplines require you to spend Focus points when you use them.",
+				"You start with two {@filter Elemental Disciplines|optionalfeatures|Feature Type=ED} of your choice and learn two additional Disciplines of your choice at 6th, 11th, and 17th level.",
+				"Whenever you learn a new {@filter Elemental Discipline|optionalfeatures|Feature Type=ED}, you can also replace one {@filter Elemental Discipline|optionalfeatures|Feature Type=ED} that you already know with a different discipline.",
+				"{@bold Casting Elemental Spells.} Some {@filter Elemental Disciplines|optionalfeatures|Feature Type=ED} allow you to cast spells. See chapter 10 of the Player's Handbook for the general rules of spellcasting. To cast one of these spells, you use its casting time and other rules, but you don't need to provide material components for it. When you cast a spell with a discipline, it is cast at the spell's lowest level unless otherwise specified.",
+				"Once you reach 5th level in this class, you can spend additional Focus points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as {@spell Burning Hands} does. The spell's level increases by 1 for each additional Focus point you spend. For example, if you are a 5th-level monk and use Sweeping Cinder Strike to cast {@spell Burning Hands}, you can spend 2 Focus points to cast it as a 2nd-level spell (the discipline's base cost of 1 Focus point plus 1).",
+				"The maximum number of Focus points (its base Focus point cost plus any additional points) that you can spend on the spell is 2, unless a discipline specifies otherwise. This maximum increases to 3 at 9th level, 4 at 13th level, and 5 at 17th level."
+			],
+			"source": "MHB",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Warrior of the Four Elements",
+			"subclassSource": "MHB",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Advanced Elemental Disciplines",
+			"source": "MHB",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Warrior of the Four Elements",
+			"subclassSource": "MHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "A Leaf on the Wind",
+							"entries": [
+								"A powerful wind rises up to catch you as you MHBll. Your Slow MHBll ability no longer requires a reaction to use, and instead you may use it automatically whenever you are conscious and not incapacitated, and it negates all MHBlling damage regardless of distance. When you use the Slow MHBll ability, you may also glide along the air to move 5 feet in any horizontal direction for every 5 feet that you MHBll."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Master of the Elements",
+			"source": "MHB",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Warrior of the Four Elements",
+			"subclassSource": "MHB",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"You can learn master level {@filter Elemental Disciplines|optionalfeatures|Feature Type=ED}. Additionally, at the end of each long rest you can change one of your learned {@filter Elemental Disciplines|optionalfeatures|Feature Type=ED} for another."
+			]
+		},
+		{
+			"name": "Legendary Elemental Disciplines",
+			"source": "MHB",
+			"page": 1,
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Warrior of the Four Elements",
+			"subclassSource": "MHB",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Avatar of the Elements",
+							"entries": [
+								"As an ultimate display of your mastery of the elements, you can spend 5 Focus as an action to have the elements of earth, fire, air, and water form a protective sphere around your body, gaining multiple benefits for 1 minute. While this ability is active, you have resistance to bludgeoning, piercing, slashing, cold, fire, lightning, and thunder damage. You also gain a burrow, fly, and swim speed equal to your movement speed. Lastly, you can use any of the following abilities as a bonus action:",
+								"* You create a small earthquake on the ground in a 15-foot radius around you. Each creature in that area must make a Dexterity saving throw. On a MHBiled save, a creature takes {@dice 1d6} bludgeoning damage and is knocked {@condition prone}.",
+								"* You create a line of fire 15 feet long and 5 feet wide extending from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes {@dice 3d6} fire damage on a MHBiled save, or half as much damage on a successful one.",
+								"* You create a 15-foot cube of swirling wind centered on a point you can see within 60 feet of you. Each creature in that area must make a Constitution saving throw. A creature takes {@dice 1d10} bludgeoning damage on a MHBiled save, or half as much damage on a successful one. If a Large or smaller creature MHBils the save, that creature is also pushed up to 10 feet away from the center of the cube.",
+								"* You create a 15-foot cone of ice shards extending from your outstretched hand in a direction you choose. Each creature in the cone must make a Constitution save throw. A creature takes {@dice 2d6} cold damage on a MHBiled save, or half as much damage on a successful one. A creature that MHBils its save against this effect has its speed halved until the start of your next turn."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

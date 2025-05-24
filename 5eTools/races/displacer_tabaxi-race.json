@@ -1,0 +1,156 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "MHB",
+				"abbreviation": "DISP-MHB",
+				"full": "Tabaxi Displacer Subrace",
+				"authors": [
+					"Marrix"
+				],
+				"version": "1.0",
+				"url": "",
+				"color": "674f35"
+			}
+		]
+	},
+	"race": [
+		{
+			"name": "Tabaxi (Displacer)",
+			"source": "MHB",
+			"lineage": "VRGR",
+			"__prop": "race",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"creatureTypes": [
+				"humanoid"
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 35
+			},
+			"traitTags": [
+			"Natural Armor"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"perception",
+							"stealth"
+						],
+						"count": 2
+					}
+				}
+			],
+		"entries": [
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your walking speed is 35 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cat's Talent",
+					"entries": [
+						"You have proficiency in the {@skill Perception} and {@skill Stealth} skills."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Displacement",
+					"entries": [
+						"As a bonus action, you can momentarily blur your form with illusory duplicates. Until the start of your next turn, attack rolls against you are made with disadvantage. Creatures that do not rely on sight are not affected by this feature, and the effect ends early if you become {@condition incapacitated}.",
+						"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Many Limbs",
+					"entries": [
+						"You have two long, shadowy tentacles that emerge from your back. They are a natural extensions of your body and can reach up to 10 feet. They are capable of simple manipulation, such as opening or closing a door or container, picking up or setting down a Tiny object, or wielding a weapon with the light property.",
+						"In addition, when you cast a spell with a range of touch, you can deliver it through one of your tentacles to a creature within 10 feet of you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Natural Armaments",
+					"entries": [
+						"Your claws and tentacles are natural weapons you can use to make unarmed strikes.",
+						{
+							"type": "list",
+							"items": [
+								"When you hit with your claws, the strike deals {@damage 1d6} + your Strength modifier slashing damage."
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"Alternatively, you can strike with one of your tentacles at a creature within 10 feet, dealing {@damage 1d4} + your Strength modifier piercing damage."
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Lizardfolk of this variant are elusive and adaptive, blending seamlessly into their surroundings with their color-changing skin. They are natural ambushers and excel at stealth, using their keen senses and shifting appearance to outmaneuver foes. Their prehensile tails allow them to anchor themselves while climbing, granting them the ability to scale vertical surfaces with ease. Additionally, their long, agile tongues enable them to interact with their environment from a distance, making them versatile in both survival and combat."
+				]
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			]
+		}
+	]
+}

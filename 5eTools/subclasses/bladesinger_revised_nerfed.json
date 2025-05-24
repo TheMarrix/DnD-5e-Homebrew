@@ -1,0 +1,183 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BSR",
+				"abbreviation": "BSR",
+				"full": "Bladesinger Revised",
+				"authors": [
+					"Marrix"
+				],
+				"convertedBy": [
+					"Marrix"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 154427421,
+		"dateLastModified": 1729630506,
+		"_dateLastModifiedHash": "d59081af38",
+		"edition": "classic"
+	},
+	"subclass": [
+		{
+			"name": "Bladesinger",
+			"subclassFeatures": [
+				"Bladesinger|Wizard||Bladesinger|BSR|2",
+				"Extra Attack|Wizard||Bladesinger|BSR|6",
+				"Spellstrike|Wizard||Bladesinger|BSR|6",
+				"Spellsunder|Wizard||Bladesinger|BSR|10",
+				"Superior Spellsunder|Wizard||Bladesinger|BSR|14"
+			],
+			"source": "BSR",
+			"shortName": "Bladesinger",
+			"className": "Wizard",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Bladesinger",
+			"source": "BSR",
+			"page": 1,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Bladesinger",
+			"subclassSource": "BSR",
+			"level": 2,
+			"entries": [
+				"Bladesingers master a tradition of wizardry that incorporates swordplay and Song. Originally created by elves, this tradition has been adopted by non-elf practitioners, who honor and expand on the elven ways.",
+				"In combat, a bladesinger uses a series of intricate, elegant maneuvers that fend off harm and allow the bladesinger to channel magic into devastating attacks and a cunning defense. Many who have observed a bladesinger at work remember the display as one of the more beautiful experiences in their life, a glorious Song accompanied by a singing blade.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Training in War and Song|Wizard||Bladesinger|BSR|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bladesong|Wizard||Bladesinger|BSR|2"
+				}
+			]
+		},
+		{
+			"name": "Training in War and Song",
+			"entries": [
+			"When you adopt this tradition at 2nd level, you gain proficiency with light armor, and you gain proficiency with one type of one-handed melee weapon of your choice.",
+			"You also gain proficiency in the Performance skill if you don't already have it."
+			],
+			"source": "BSR",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Bladesinger",
+			"subclassSource": "BSR",
+			"level": 2,
+			"header": 1
+		},		
+		{
+			"name": "Bladesong",
+			"entries": [
+				"So long as you are not wearing heavy armor or wielding a heavy weapon, you can use your bonus action to enter the trance known as the Bladesong. This trance lasts for 1 minute, and while it is active, you gain the benefits below:",
+				{
+					"type": "list",
+					"items": [
+						"Your walking speed increases by 10 feet.",
+						"You gain half your proficiency bonus (rounded up) to your Armor Class.",
+						"You gain a bonus to any Constitution saving throws you make to maintain concentration on a spell. The bonus equals your Intelligence modifier (minimum of +1).",
+						"Whenever you attack with a melee weapon with which you have proficiency, you can use your Intelligence modifier for the attack and damage rolls instead of using Strength or Dexterity.",
+						"You add your Intelligence modifier (minimum of +1) to all Strength (Athletics) and Dexterity (Acrobatics) checks."
+					]
+				},
+				"Your Bladesong ends if you are incapacitated, if you don heavy armor or a heavy weapon, or if you use a bonus action to end it. Once you enter a Bladesong you must complete a short or long rest before you can do so again. When you have no uses of this feature remaining, you can expend a spell slot of 1st-level or higher to enter the Bladesong again."
+			],
+			"source": "BSR",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Bladesinger",
+			"subclassSource": "BSR",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "BSR",
+			"page": 1,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Bladesinger",
+			"subclassSource": "BSR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks."
+			]
+		},	
+		{
+			"name": "Spellstrike",
+			"source": "BSR",
+			"page": 1,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Bladesinger",
+			"subclassSource": "BSR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You learn to channel your spells through weapons. When you cast a non-blade cantrip, you may choose to turn it into a blade cantrip. To do so, make a melee weapon attack as part of casting the spell. The cantrip must meet the following requirements:",
+				{
+					"type": "list",
+					"items": [
+						"The cantrip must have a casting time of 1 action.",
+						"The cantrip must require a spell attack roll or force its target to make a saving throw."
+					]
+				},
+				"If your attack misses, the spell fails and has no effect. On a hit, the spell takes effect immediately after the normal effects and damage of your weapon attack, using the rules below:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Damage & Effects:} Before rolling the spell’s damage, remove one damage die. The spell's additional effects still apply as normal.",
+						"{@b Damage Type:} If the spell deals damage, the weapon attack uses the spell’s damage type instead of the weapon’s normal damage type.",
+						"{@b Saving Throws:} If the spell requires a saving throw when cast, the target makes the initial saving throw at disadvantage on hit. If you score a critical hit on the attack, it automatically fails this saving throw. Other targets (if any) save as normal.",
+						"{@b Spell Attacks:} If the spell requires a spell attack roll, it instantly takes effect when you hit with your weapon attack."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellsunder",
+			"source": "BSR",
+			"page": 1,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Bladesinger",
+			"subclassSource": "BSR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You can use Spellstrike to cut down hostile spells. When you see a creature cast a spell that will affect you, you can use a reaction to expend a spell slot and use your melee weapon to attack the spell as it takes effect.",
+				"If the spell was cast at a level equal to the level of the spell slot you expended or lower, the spell fails and has no effect. If it was cast at a level higher than the slot you expended, make an attack roll with your weapon. If your attack roll exceeds 12 + twice the level of the spell, the spell fails and has no effect."
+			]
+		},		
+		{
+			"name": "Superior Spellsunder",
+			"source": "BSR",
+			"page": 1,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Bladesinger",
+			"subclassSource": "BSR",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You have become an expert in the art of cutting spells. You gain the following:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever you use Spellsunder, you add your Intelligence modifier (minimum of +1) to the attack roll you make.",
+						"When a creature you can see within 30 feet is targeted by a spell you can see, you can use a reaction to teleport to an unoccupied space within 5 feet of it and use your Spellsunder reaction against the triggering spell."
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1361 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ppt_mhb",
+				"abbreviation": "MHB",
+				"full": "The Puppeteer Class",
+				"authors": [
+					"Marrix"
+				],
+				"version": "1.0.0"
+			}
+		],
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1734452950,
+		"dateLastModified": 1740695041
+	},
+	"class": [
+		{
+			"name": "Puppeteer",
+			"source": "ppt_mhb",
+			"edition": "classic",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"wis",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "puppeteer",
+			"preparedSpells": "<$level$> / 2 + <$cha_mod$>",
+			"preparedSpellsChange": "restLong",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple"
+				],
+				"tools": [
+					"{@item thieves' tools|PHB}",
+					"{@item tinker's tools|PHB}",
+					"one type of {@item artisan's tools|PHB} of your choice"
+				],
+				"toolProficiencies": [
+					{
+						"thieves' tools": true,
+						"tinker's tools": true,
+						"anyArtisansTool": 1
+					}
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"deception",
+								"history",
+								"insight",
+								"perception",
+								"persuasion",
+								"sleight of hand"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"any two {@filter simple weapons|items|source=phb|category=basic|type=simple weapon} of your choice",
+					"a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
+					"(a) {@item studded leather armor|phb} or (b) {@item scale mail|phb}",
+					"{@item thieves' tools|phb} and a {@item dungeoneer's pack|phb}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"_": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"_": [
+							"light crossbow|phb",
+							"crossbow bolts (20)|phb"
+						]
+					},
+					{
+						"a": [
+							"studded leather armor|phb"
+						],
+						"b": [
+							"scale mail|phb"
+						]
+					},
+					{
+						"_": [
+							"thieves' tools|phb",
+							"dungeoneer's pack|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"tools": [
+						"{@item thieves' tools|PHB}",
+						"{@item tinker's tools|PHB}"
+					],
+					"toolProficiencies": [
+						{
+							"thieves' tools": true,
+							"tinker's tools": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"String Range",
+						"{@filter Cantrips Known|spells|level=0|class=Puppeteer}"
+					],
+					"rows": [
+						[
+							"30 ft",
+							2
+						],
+						[
+							"30 ft",
+							2
+						],
+						[
+							"30 ft",
+							2
+						],
+						[
+							"30 ft",
+							3
+						],
+						[
+							"45 ft",
+							3
+						],
+						[
+							"45 ft",
+							3
+						],
+						[
+							"45 ft",
+							3
+						],
+						[
+							"45 ft",
+							3
+						],
+						[
+							"60 ft",
+							3
+						],
+						[
+							"60 ft",
+							4
+						],
+						[
+							"60 ft",
+							4
+						],
+						[
+							"60 ft",
+							4
+						],
+						[
+							"75 ft",
+							4
+						],
+						[
+							"75 ft",
+							4
+						],
+						[
+							"75 ft",
+							4
+						],
+						[
+							"75 ft",
+							4
+						],
+						[
+							"90 ft",
+							4
+						],
+						[
+							"90 ft",
+							4
+						],
+						[
+							"90 ft",
+							4
+						],
+						[
+							"90 ft",
+							4
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Puppeteer}",
+						"{@filter 2nd|spells|level=2|class=Puppeteer}",
+						"{@filter 3rd|spells|level=3|class=Puppeteer}",
+						"{@filter 4th|spells|level=4|class=Puppeteer}",
+						"{@filter 5th|spells|level=5|class=Puppeteer}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classSpells": [
+				"Blade Ward",
+				"Dancing Lights",
+				"Friends",
+				"Light",
+				"Mage Hand",
+				"Mending",
+				"Minor Illusion",
+				"Resistance",
+				"Thaumaturgy",
+				"Vicious Mockery",
+				"Bane",
+				"Cause Fear|XGE",
+				"Charm Person",
+				"Command",
+				"Detect Magic",
+				"Disguise Self",
+				"Dissonant Whispers",
+				"Entangle",
+				"Expeditious Retreat",
+				"Faerie Fire",
+				"Feather Fall",
+				"Hex",
+				"Jump",
+				"Longstrider",
+				"Mage Armor",
+				"Sanctuary",
+				"Silent Image",
+				"Snare|XGE",
+				"Tasha's Hideous Laughter",
+				"Unseen Servant",
+				"Arcane Lock",
+				"Augery",
+				"Blindness/Deafness",
+				"Calm Emotions",
+				"Crown of Madness",
+				"Earthbind|XGE",
+				"Enlarge/Reduce",
+				"Enthrall",
+				"Hold Person",
+				"Knock",
+				"Magic Mouth",
+				"Maximilian's Earthen Grasp|XGE",
+				"Mirror Image",
+				"Misty Step",
+				"Nathair's Mischief|FTD",
+				"Phantasmal Force",
+				"Suggestion",
+				"Tasha's Mind Whip|TCE",
+				"Bestow Curse",
+				"Enemies Abound|XGE",
+				"Fear",
+				"Feign Death",
+				"Major Image",
+				"Nondetection",
+				"Phantom Steed",
+				"Remove Curse",
+				"Slow",
+				"Speak with Dead",
+				"Tiny Servant|XGE",
+				"Charm Monster|XGE",
+				"Compulsion",
+				"Confusion",
+				"Dominate Beast",
+				"Phantasmal Killer",
+				"Animate Objects",
+				"Dominate Person",
+				"Geas",
+				"Hold Monster",
+				"Seeming"
+			],
+			"classFeatures": [
+				"Spellcasting|Puppeteer|ppt_mhb|1",
+				{
+					"classFeature": "Puppet Specialization|Puppeteer|ppt_mhb|1",
+					"gainSubclassFeature": true
+				},
+				"The Right Tool for the Job|Puppeteer|ppt_mhb|3",
+				"Ability Score Improvement|Puppeteer|ppt_mhb|4",
+				{
+					"classFeature": "Puppet Improvement|Puppeteer|ppt_mhb|6",
+					"gainSubclassFeature": true
+				},
+				"Extra Command|Puppeteer|ppt_mhb|5",
+				"Flash of Genius|Puppeteer|ppt_mhb|7",
+				"Ability Score Improvement|Puppeteer|ppt_mhb|8",
+				"Magic Item Adept|Puppeteer|ppt_mhb|10",
+				{
+					"classFeature": "Puppet Improvement|Puppeteer|ppt_mhb|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Puppeteer|ppt_mhb|12",
+				"Magic Item Savant|Puppeteer|ppt_mhb|14",
+				{
+					"classFeature": "Puppet Improvement|Puppeteer|ppt_mhb|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Puppeteer|ppt_mhb|16",
+				"Magic Item Master|Puppeteer|ppt_mhb|18",
+				"Ability Score Improvement|Puppeteer|ppt_mhb|19",
+				"Soul of Artifice|Puppeteer|ppt_mhb|20"
+			],
+			"subclassTitle": "Puppetman",
+			"hasFluff": true
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Spellcasting",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 1,
+			"entries": [
+				"{@i 1st-level puppeteer feature}",
+				"You've studied the workings of magic and how to cast spells, channeling the magic through objects. To observers, you don't appear to be casting spells in a conventional way; you appear to produce wonders from mundane items and outlandish inventions.",
+				{
+					"type": "entries",
+					"name": "Tools Required",
+					"entries": [
+						"You produce your puppeteer spell effects through your tools. You must have a spellcasting focus\u2014specifically {@item thieves' tools|phb} or some kind of {@item artisan's tools|phb|artisan's tool}\u2014in hand when you cast any spell with this Spellcasting feature (meaning the spell has an 'M' component when you cast it). You must be proficient with the tool to use it in this way. See {@book chapter 5|PHB|4}, \"Equipment,\" in the {@book Player's Handbook|PHB} for descriptions of these tools.",
+						"After you gain the Infuse Item feature at 2nd level, you can also use any item bearing one of your infusions as a spellcasting focus.",
+						{
+							"type": "inset",
+							"name": "The Magic of Artifice",
+							"entries": [
+								"As an puppeteer, you use tools when you cast your spells. When describing your spellcasting, think about how you're using a tool to perform the spell effect. If you cast {@spell cure wounds} using {@item alchemist's supplies|PHB}, you could be quickly producing a salve. If you cast it using {@item tinker's tools|PHB}, you might have a miniature mechanical spider that binds wounds. When you cast {@spell poison spray}, you could fling foul chemicals or use a wand that spits venom. The effect of the spell is the same as for a spellcaster of any other class, but your method of spellcasting is special.",
+								"The same principle applies when you prepare your spells. As an puppeteer, you don't study a spellbook or pray to prepare your spells. Instead, you work with your tools and create the specialized items you'll use to produce your effects. If you replace {@spell cure wounds} with {@spell heat metal}, you might be altering the device you use to heal\u2014perhaps modifying a tool so that it channels heat instead of healing energy.",
+								"Such details don't limit you in any way or provide you with any benefit beyond the spell's effects. You don't have to justify how you're using tools to cast a spell. But describing your spellcasting creatively is a fun way to distinguish yourself from other spellcasters."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cantrips (0-Level Spells)",
+					"entries": [
+						"At 1st level, you know two cantrips of your choice from the {@filter puppeteer spell list|spells|level=0|class=Puppeteer (MHB)}. At higher levels, you learn additional puppeteer cantrips of your choice, as shown in the Cantrips Known column of the Puppeteer table.",
+						"When you gain a level in this class, you can replace one of the puppeteer cantrips you know with another cantrip from the puppeteer spell list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"The Puppeteer table shows how many spell slots you have to cast your puppeteer spells. To cast one of your puppeteer spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"You prepare the list of puppeteer spells that are available for you to cast, choosing from the {@filter puppeteer spell list|spells|class=Puppeteer (MHB)}. When you do so, choose a number of puppeteer spells equal to your Charisma modifier + half your puppeteer level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+						"For example, if you are a 5th-level puppeteer, you have four 1st-level and two 2nd-level spell slots. With an Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell Dissonant Whispers}, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of puppeteer spells requires time spent tinkering with your spellcasting focuses: at least 1 minute per spell level for each spell on your list."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Charisma is your spellcasting ability for your puppeteer spells; your force of personality and strength of presence allows you to manipulate magic with exceptional skill. You use your Charisma whenever a puppeteer spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a puppeteer spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ritual Casting",
+					"entries": [
+						"You can cast an puppeteer spell as a ritual if that spell has the ritual tag. You don't need to have the spell prepared."
+					]
+				}
+			]
+		},
+		{
+			"name": "Puppet Specialization",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 1,
+			"entries": [
+				"Choose two types of puppets to command. You gain control over those puppet types, and each gains additional features at 6th level, 11th level, and again at 15th level.",
+				{
+					"type": "entries",
+					"name": "Puppet Control",
+					"entries": [
+						"In combat, your puppets act during your turn. Each puppet can use its reaction on its own, but cannot move or take other actions unless you use a {@action Command Puppet|ppt_mhb} action on your turn to direct it.",
+						"If you are {@condition incapacitated}, or if a puppet ends its turn outside your Strings Range, it becomes {@condition incapacitated} until it is again within range and you are no longer {@condition incapacitated}.",
+						"If the {@spell mending} spell is cast on a puppet, it regains 1d6 hit points. If a puppet has died, at the end of a short rest you can expend a spell slot of 1st level or higher to revive it with all its hit points restored.",
+						"At the end of a long rest both your puppets are repaired, you can create a new puppet if you have your smith's tools with you. If you already have the same puppet or both puppets, the first one immediately perishes. The puppets also perish if you die."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Puppet Repair",
+					"entries": [
+						"If the {@spell mending} spell is cast on a puppet, it regains 1d6 hit points. If a puppet is reduced to 0 hit points, it is considered destroyed and cannot take any actions or reactions until it is repaired. At the end of a short rest, you can expend a spell slot of 1st level or higher to repair one destroyed puppet and restore it to full hit points.",
+						"At the end of a long rest, both of your puppets are fully repaired. If a puppet has been lost, you can create a new puppet during a long rest, provided you have your smith’s tools with you. If you already have a puppet of the same type, the older one is immediately destroyed. All puppets are destroyed if your character dies."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Puppet Spells",
+					"entries": [
+						"You always have certain spells prepared after you reach particular levels in this class, as shown in the puppets spell table. These spells count as puppeteer spells for you, but they don’t count against the number of puppeteer spells you prepare.",
+						"When you cast a puppet spell, it originates from the matching puppet instead of you. The puppet is considered the point of origin for the spell, and any concentration required is maintained by the puppet instead of you. You must still use your own senses to perceive and choose targets for the spell. Puppet spells you cast do not require material components, regardless of cost."
+					]
+				},
+				{
+					"name": "Puppet Versatility",
+					"source": "ppt_mhb",
+					"className": "Puppeteer",
+					"classSource": "ppt_mhb",
+					"level": 1,
+					"isClassFeatureVariant": true,
+					"entries": [
+						"{@i Puppeteer {@variantrule optional class features|tce|optional feature}}",
+						"After you finish a long rest, you may change one of your puppets for a different type of puppet."
+					]
+				}
+			]
+		},
+		{
+			"name": "The Right Tool for the Job",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level puppeteer feature}",
+				"You've learned how to produce exactly the tool you need: with {@item thieves' tools|PHB} or {@item artisan's tools|PHB} in hand, you can magically create one set of {@item artisan's tools|PHB} in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 4,
+			"entries": [
+				"{@i 4th-level puppeteer feature}",
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Command",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 5,
+			"entries": [
+				"{@i 6th-level puppeteer feature}",
+				"Starting at 5th level, you can give two commands, rather than one, whenever you take the {@action Command} action on your turn."
+			]
+		},
+		{
+			"name": "Puppet Improvement",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 6,
+			"entries": [
+				"{@i 5th-level puppeteer feature}",
+				"You gain a feature granted by your Puppeteer Specialist choice."
+			]
+		},
+		{
+			"name": "Flash of Genius",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 7,
+			"entries": [
+				"{@i 7th-level puppeteer feature}",
+				"You've gained the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Charisma modifier to the roll.",
+				"You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 8,
+			"entries": [
+				"{@i 8th-level puppeteer feature}",
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Magic Item Adept",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 10,
+			"entries": [
+				"{@i 10th-level puppeteer feature}",
+				"You've achieved a profound understanding of how to use and make magic items:",
+				{
+					"type": "list",
+					"items": [
+						"You can attune to up to four magic items at once.",
+						"If you craft a magic item with a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold."
+					]
+				}
+			]
+		},
+		{
+			"name": "Puppet Improvement",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 11,
+			"entries": [
+				"Your puppets become stronger."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 12,
+			"entries": [
+				"{@i 12th-level puppeteer feature}",
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Magic Item Savant",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 14,
+			"entries": [
+				"{@i 14th-level puppeteer feature}",
+				"Your skill with magic items deepens:",
+				{
+					"type": "list",
+					"items": [
+						"You can attune to up to five magic items at once.",
+						"You ignore all class, race, spell, and level requirements on attuning to or using a magic item."
+					]
+				}
+			]
+		},
+		{
+			"name": "Puppet Improvement",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 15,
+			"entries": [
+				"{@i 15th-level puppeteer feature}",
+				"You gain a feature granted by your Puppeteer Specialist choice."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 16,
+			"entries": [
+				"{@i 16th-level puppeteer feature}",
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Magic Item Master",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 18,
+			"entries": [
+				"{@i 18th-level puppeteer feature}",
+				"You can now attune to up to six magic items at once."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 19,
+			"entries": [
+				"{@i 19th-level puppeteer feature}",
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Soul of Artifice",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"level": 20,
+			"entries": [
+				"{@i 20th-level puppeteer feature}",
+				"You have developed a mystical connection to your magic items, which you can draw on for protection:",
+				{
+					"type": "list",
+					"items": [
+						"You gain a +1 bonus to all saving throws per magic item you are currently attuned to.",
+						"If you're reduced to 0 hit points but not killed outright, you can use your reaction to end one of your puppeteer infusions, causing you to drop to 1 hit point instead of 0."
+					]
+				}
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "Guardian Puppet",
+			"shortName": "Guardian",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"edition": "classic",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"shield"
+						],
+						"5": [
+							"warding bond"
+						],
+						"9": [
+							"protection from energy"
+						],
+						"13": [
+							"fire shield"
+						],
+						"17": [
+							"circle of power"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Guardian Puppet|Puppeteer|ppt_mhb|Guardian|ppt_mhb|1",
+				"Puppet Something|Puppeteer|ppt_mhb|Guardian|ppt_mhb|6",
+				"Arcane Jolt|Puppeteer|ppt_mhb|Guardian|ppt_mhb|11",
+				"Improved Defender|Puppeteer|ppt_mhb|Guardian|ppt_mhb|15"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"name": "Shinobi Puppet",
+			"shortName": "Shinobi",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"edition": "classic",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"shield"
+						],
+						"5": [
+							"warding bond"
+						],
+						"9": [
+							"protection from energy"
+						],
+						"13": [
+							"fire shield"
+						],
+						"17": [
+							"circle of power"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Shinobi Puppet|Puppeteer|ppt_mhb|Shinobi|ppt_mhb|1",
+				"Puppet Something|Puppeteer|ppt_mhb|Shinobi|ppt_mhb|6",
+				"Arcane Jolt|Puppeteer|ppt_mhb|Shinobi|ppt_mhb|11",
+				"Improved Defender|Puppeteer|ppt_mhb|Shinobi|ppt_mhb|15"
+			],
+			"hasFluffImages": true
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Guardian Puppet",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Guardian",
+			"subclassSource": "ppt_mhb",
+			"level": 1,
+			"entries": [
+				"Armies require protection, and someone has to put things back together if defenses fail. A combination of protector and medic, a Guardian is an expert at defending others and repairing both material and personnel. To aid in their work, Guardians are usually accompanied by a steel defender, a protective companion of their own creation. Many soldiers tell stories of nearly dying before being saved by a Guardian and a steel defender.",
+				"Guardians played a key role in House Cannith's work on battle constructs and the original warforged, and after the Last War, these puppeteers led efforts to aid those who were injured in the war's horrific battles.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guardian Spells|Puppeteer|ppt_mhb|Guardian|ppt_mhb|0"
+				}
+			]
+		},
+		{
+			"name": "Guardian Spells",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Guardian",
+			"subclassSource": "ppt_mhb",
+			"level": 0,
+			"header": 1,
+			"entries": [
+				{
+					"type": "table",
+					"colLabels": [
+						"Puppeteer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell shield}"
+						],
+						[
+							"5th",
+							"{@spell warding bond}"
+						],
+						[
+							"9th",
+							"{@spell protection from energy}"
+						],
+						[
+							"13th",
+							"{@spell fire shield}"
+						],
+						[
+							"17th",
+							"{@spell circle of power}"
+						]
+					]
+				},
+				{
+					"type": "statblock",
+					"tag": "creature",
+					"source": "ppt_mhb",
+					"name": "Guardian Puppet",
+					"page": 2,
+					"collapsed": true
+				}
+			]
+		},
+		{
+			"name": "Puppet Something",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Guardian",
+			"subclassSource": "ppt_mhb",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 5th level, you can attack twice, rather than once, whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"name": "Arcane Jolt",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Guardian",
+			"subclassSource": "ppt_mhb",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 9th level, you learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"The target takes an extra {@damage 2d6} force damage.",
+						"Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring {@dice 2d6} hit points to it."
+					]
+				},
+				"You can use this energy a number of times equal to your Charisma modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Improved Defender",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Guardian",
+			"subclassSource": "ppt_mhb",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, your Arcane Jolt and steel defender become more powerful:",
+				{
+					"type": "list",
+					"items": [
+						"The extra damage and the healing of your Arcane Jolt both increase to {@damage 4d6}.",
+						"Your steel defender gains a +2 bonus to Armor Class.",
+						"Whenever your steel defender uses its Deflect Attack, the attacker takes force damage equal to {@damage 1d4} + your Charisma modifier."
+					]
+				}
+			]
+		},
+		{
+			"name": "Shinobi Puppet",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "ppt_mhb",
+			"level": 1,
+			"entries": [
+				"Armies require protection, and someone has to put things back together if defenses fail. A combination of protector and medic, a Shinobi is an expert at defending others and repairing both material and personnel. To aid in their work, Shinobis are usually accompanied by a steel defender, a protective companion of their own creation. Many soldiers tell stories of nearly dying before being saved by a Shinobi and a steel defender.",
+				"Shinobis played a key role in House Cannith's work on battle constructs and the original warforged, and after the Last War, these puppeteers led efforts to aid those who were injured in the war's horrific battles.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shinobi Spells|Puppeteer|ppt_mhb|Shinobi|ppt_mhb|0"
+				}
+			]
+		},
+		{
+			"name": "Shinobi Spells",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "ppt_mhb",
+			"level": 0,
+			"header": 1,
+			"entries": [
+				{
+					"type": "table",
+					"colLabels": [
+						"Puppeteer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell ensnaring strike}"
+						],
+						[
+							"5th",
+							"{@spell pass without trace}"
+						],
+						[
+							"9th",
+							"{@spell conjure barrage}"
+						],
+						[
+							"13th",
+							"{@spell freedom of movement}"
+						],
+						[
+							"17th",
+							"{@spell conjure volley}"
+						]
+					]
+				},
+				{
+					"type": "statblock",
+					"tag": "creature",
+					"source": "ppt_mhb",
+					"name": "Shinobi Puppet",
+					"page": 2,
+					"collapsed": true
+				}
+			]
+		},
+		{
+			"name": "Puppet Something",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "ppt_mhb",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 5th level, you can attack twice, rather than once, whenever you take the {@action Attack} action on your turn."
+			]
+		},
+		{
+			"name": "Arcane Jolt",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "ppt_mhb",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 9th level, you learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"The target takes an extra {@damage 2d6} force damage.",
+						"Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring {@dice 2d6} hit points to it."
+					]
+				},
+				"You can use this energy a number of times equal to your Charisma modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Improved Defender",
+			"source": "ppt_mhb",
+			"className": "Puppeteer",
+			"classSource": "ppt_mhb",
+			"subclassShortName": "Shinobi",
+			"subclassSource": "ppt_mhb",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, your Arcane Jolt and steel defender become more powerful:",
+				{
+					"type": "list",
+					"items": [
+						"The extra damage and the healing of your Arcane Jolt both increase to {@damage 4d6}.",
+						"Your steel defender gains a +2 bonus to Armor Class.",
+						"Whenever your steel defender uses its Deflect Attack, the attacker takes force damage equal to {@damage 1d4} + your Charisma modifier."
+					]
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Guardian Puppet",
+			"source": "ppt_mhb",
+			"summonedByClass": "Puppeteer|PPT",
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "5 + five times your puppeteer level (the puppet has a number of Hit Dice [d6s] equal to your puppeteer level)"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 16,
+			"int": 4,
+			"wis": 10,
+			"cha": 6,
+			"save": {
+				"str": "2 + PB",
+				"con": "3 + PB"
+			},
+			"skill": {
+				"athletics": "2 + PB",
+				"perception": "PB"
+			},
+			"senses": [
+				""
+			],
+			"passive": "10 + PB",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Vigilant",
+					"entries": [
+						"The defender can't be {@status surprised}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Puppet Slam",
+					"entries": [
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d6 + 2} plus your Charisma modifier Bludgeoning damage, and the target can't take {@action Opportunity Attack|XPHB|Opportunity Attacks} until the start of its next turn."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Deflect Attacks",
+					"entries": [
+						"When a creature within 5 feet of the puppet is attacked, the puppet can use its reaction to impose disadvantage on the triggering attack roll and all other attack rolls against that creature until the start of your next turn, provided it remains within 5 feet of the target."
+					]
+				}
+			],
+			"senseTags": [
+				""
+			],
+			"damageTags": [
+				""
+			],
+			"miscTags": [
+				""
+			]
+		},
+		{
+			"name": "Shinobi Puppet",
+			"source": "ppt_mhb",
+			"summonedByClass": "Puppeteer|PPT",
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "5 + three times your puppeteer level,"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 10,
+			"int": 12,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"dex": "3 + PB",
+				"int": "1 + PB"
+			},
+			"skill": {
+				"acrobatics": "3 + PB",
+				"stealth": "3 + PB"
+			},
+			"senses": [
+				""
+			],
+			"passive": "10",
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Sneak Attack",
+					"entries": [
+				"Once per turn, the puppet can deal an extra {@damage 1d6} damage to one creature it hits with an attack if it has advantage on the attack roll. The puppet does not need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and it does not have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"{@i (11th-level Puppeteer feature)}",
+						"When the puppet is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Throw Shuriken",
+					"entries": [
+						"{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 30/60 ft. {@h}{@damage 1d4} plus your Charisma modifier piercing damage. The shuriken vanishes after hitting or missing their target."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Vanish (1/Day)",
+					"entries": [
+						"When a creature attacks the puppet with an melee attack, it can use its reaction to impose disadvantage on the triggering attack roll and teleport up to 30 feet to an location you can see."
+					]
+				}
+			],
+			"senseTags": [
+				""
+			],
+			"damageTags": [
+				""
+			],
+			"miscTags": [
+				""
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Command Puppet",
+			"source": "ppt_mhb",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				},
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"entries": [
+				"Your puppets only act when you command them. They can move up to their speed when commanded to take an action, whether through your action or bonus action. In addition, each puppet can take a reaction on its own, independent of your commands.",
+				{
+					"type": "entries",
+					"name": "Command",
+					"entries": [
+						"As an action, you can command one of your puppets to take two actions, or command both your puppets to each take one action. When commanded this way, a puppet can also use its bonus action as part of the command, provided it has one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Swift Command",
+					"entries": [
+						"As a bonus action, you can command one of your puppets to take one action. When commanded this way, a puppet cannot use its bonus action. You can use this bonus action before or after using the Command action."
+					]
+				}
+			]
+		}
+	]
+}

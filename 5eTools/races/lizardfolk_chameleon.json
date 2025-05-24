@@ -1,0 +1,147 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ChamMX",
+				"abbreviation": "MXHB",
+				"full": "Lizardfolk Varient (Chameleon)",
+				"authors": [
+					"Marrix"
+				],
+				"version": "1.0",
+				"url": "https://raw.githubusercontent.com/TheMarrix/DnD-5e-Homebrew/refs/heads/main/races/lizardfolk_chameleon.json",
+				"color": "674f35"
+			}
+		]
+	},
+	"race": [
+		{
+			"name": "Lizardfolk (Chameleon)",
+			"source": "ChamMX",
+			"lineage": "VRGR",
+			"__prop": "race",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"creatureTypes": [
+				"humanoid"
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"climb": true
+			},
+			"traitTags": [
+			"Natural Armor"
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"animal handling",
+							"medicine",
+							"nature",
+							"perception",
+							"stealth",
+							"survival"
+						],
+						"count": 2
+					}
+				}
+			],
+		"entries": [
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your walking speed is 30 feet, and you have a climbing speed equal to your walking speed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Adaptive Camouflage",
+					"entries": [
+						"Your skin can change color to match your environment, granting you a natural advantage when trying to remain unseen. You can take the {@action hide} action as long as you are in contact with an opaque object or solid surface, such as a wall, tree, or large rock."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Natural Armor",
+					"entries": [
+						"You have tough, scaly skin. When you aren't wearing armor, your base AC is 13 + Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nature's Intuition",
+					"entries": [
+						"Thanks to your mystical connection to nature, you gain proficiency with two of the following skills of your choice: {@skill Animal Handling}, {@skill Medicine}, {@skill Nature}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tail-grip",
+					"entries": [
+						"You can use your tail to grab and hold small objects, or to anchor yourself to terrain."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tongue-lash",
+					"entries": [
+						"You can make minor interactions with your tongue, such as activating buttons, casting touch spells or retrieving small objects, from a distance of up to 10 feet."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Lizardfolk of this variant are elusive and adaptive, blending seamlessly into their surroundings with their color-changing skin. They are natural ambushers and excel at stealth, using their keen senses and shifting appearance to outmaneuver foes. Their prehensile tails allow them to anchor themselves while climbing, granting them the ability to scale vertical surfaces with ease. Additionally, their long, agile tongues enable them to interact with their environment from a distance, making them versatile in both survival and combat."
+				]
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			]
+		}
+	]
+}

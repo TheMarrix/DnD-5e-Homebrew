@@ -1,0 +1,131 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ACCORD-MHB",
+				"abbreviation": "MHB",
+				"full": "College of Accord",
+				"authors": [
+					"Marrix"
+				],
+				"version": "2021.06.29",
+				"color": "c8a06c",
+				"targetSchema": "1.0"
+			}
+		],
+		"dateAdded": 1704461796,
+		"dateLastModified": 1729630006,
+		"_dateLastModifiedHash": "f4ed72b25c",
+		"edition": "classic"
+	},
+	"subclass": [
+		{
+			"name": "College of Accord",
+			"source": "ACCORD-MHB",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 0,
+			"shortName": "Accord",
+			"subclassFeatures": [
+				"College of Accord|Bard|PHB|Accord|MHB|3|ACCORD-MHB",
+				"Insightful|Bard|PHB|Accord|MHB|3|ACCORD-MHB",
+				"Resonating Melody|Bard|PHB|Accord|MHB|3|ACCORD-MHB",
+				"Inspiring Rythem|Bard|PHB|Accord|MHB|6|ACCORD-MHB",
+				"Echoing Triumph|Bard|PHB|Accord|MHB|6|ACCORD-MHB",
+				"The Art of Flying Blades|Bard|PHB|Accord|MHB|14|ACCORD-MHB"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "College of Accord",
+			"source": "ACCORD-MHB",
+			"page": 0,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Accord",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Bards of the College of Accord infuse their voice with the magic to inspire others to feats of heroism. Rather than use their abilities to empower themselves, they bring out the best in their allies. For some Bards of this College, their days of gallantry are long behind them. For others, they lead allies from the front with magic that uplifts and protects."
+			]
+		},
+		{
+			"name": "Insightful",
+			"source": "ACCORD-MHB",
+			"page": 0,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Accord",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You also gain proficiency in either Perception or Insight (your choice).",
+				"In addition, when you cast a Bard spell that has a range of Self, you may choose to instead target a willing creature you can see within 30 feet of you. The spell affects that creature as if they had cast it themselves, but you must still concentrate on the spell if it requires concentration.",
+				"Spells that grant the caster an action, bonus action, or reaction that can affect creatures other than the caster cannot be cast this way."
+			]
+		},
+		{
+			"name": "Resonating Melody",
+			"source": "ACCORD-MHB",
+			"page": 0,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Accord",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"When you cast a spell that does not deal damage, force a saving throw, or otherwise have harmful effects on any of its targets, you can expend one use of your Bardic Inspiration as part of the casting to target an additional creature within the spell’s range.",
+				"If the spell restores hit points or grants temporary hit points, you also add one roll of your Bardic Inspiration die as a bonus to the healing or temporary hit points granted. In addition, if the spell requires concentration, you gain a bonus to Constitution saving throws made to maintain concentration equal to one roll of your Bardic Inspiration die."
+			]
+		},
+		{
+			"name": "Inspiring Rythem",
+			"source": "ACCORD-MHB",
+			"page": 0,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Accord",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You learn three spells of your choice that qualify for the Resonating Melody feature. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof (see a class's section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Bard Features table.",
+				"You always have the chosen spells prepared, and whenever you gain a Bard level, you can replace one of the spells with another spell that meets these requirements."
+			]
+		},
+		{
+			"name": "Echoing Triumph",
+			"source": "ACCORD-MHB",
+			"page": 0,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Accord",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Flavor text here. Whenever you or an ally within 30 feet of you rolls a 20 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to regain one expended use of your Bardic Inspiration feature.",
+				"As part of the same reaction, you may instead choose to grant Bardic Inspiration to a creature within 60 feet who can hear or see you, rather than regaining the expended use."
+			]
+		},
+		{
+			"name": "The Art of Flying Blades",
+			"source": "ACCORD-MHB",
+			"page": 0,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Accord",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, your weapon attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+				"In addition, you can use Inspiring Rythem as a 3rd level spell without expending a spell slot."
+			]
+		}
+	]
+}

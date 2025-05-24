@@ -1,0 +1,167 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "mrhbfd",
+				"abbreviation": "MXFD",
+				"full": "Frost Domain",
+				"authors": [
+					"Marrix"
+				],
+				"version": "1.0",
+				"url": ""
+			}
+		],
+		"dateAdded": 1589918247,
+		"dateLastModified": 1729630006,
+		"_dateLastModifiedHash": "f4fe08c552",
+		"edition": "classic"
+	},
+	"subclass": [
+		{
+			"name": "Frost Domain",
+			"shortName": "Frost",
+			"source": "mrhbfd",
+			"subclassSpells": [
+				"ray of frost",
+				"absorb elements|xge",
+				"armor of agathys",
+				"hold person",
+				"rime's binding ice|ftd",
+				"sleet storm",
+				"slow",
+				"blight",
+				"ice storm",
+				"cone of cold",
+				"hold monster"
+			],
+			"subclassFeatures": [
+				"Frost Domain|Cleric||Frost|mrhbfd|3",
+				"Ice Age|Cleric||Frost|mrhbfd|3",
+				"Channel Divinity: Binding of the Deep|Cleric||Frost|mrhbfd|6",
+				"Demonic Ascendancy|Cleric||Frost|mrhbfd|17"
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Frost Domain",
+			"source": "mrhbfd",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "mrhbfd",
+			"level": 3,
+			"entries": [
+				"Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Frost Domain Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Frost Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell ray of frost}, {@spell absorb elements|xge}, {@spell armor of agathys}, {@spell hold person}, {@spell rime's binding ice|ftd}"
+						],
+						[
+							"5th",
+							"{@spell sleet storm}, {@spell slow}"
+						],
+						[
+							"7th",
+							"{@spell blight}, {@spell ice storm}"
+						],
+						[
+							"9th",
+							"{@spell cone of cold}, {@spell hold monster}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cold Heart|Cleric||Frost|mrhbfd|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Creeping Frost|Cleric||Frost|mrhbfd|3"
+				}
+			]
+		},
+		{
+			"name": "Cold Heart",
+			"entries": [
+				"You gain resistance to cold damage and gain proficiency in the Nature or Survival skill (your choice)."
+			],
+			"source": "mrhbfd",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "mrhbfd",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Creeping Frost",
+			"entries": [
+				"When you reduce the speed of a creature using a spell of 1st level or higher that does not deal any damage (such as hold person or sleet storm), frost creeps up from the ground and encases their feet and legs, chilling them to the bone.",
+				"At the start of each of the creature’s turns, as long as its speed remains reduced by one of your spells, you may choose to have it take cold damage equal to 1d6 + your Wisdom modifier. This damage increases to 2d6 at 10th level and 3d6 at 16th level. A creature can only take this damage once per turn."
+			],
+			"source": "mrhbfd",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "mrhbfd",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Ice Age",
+			"source": "mrhbfd",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "mrhbfd",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you can use your Channel Divinity to freeze the ground in a 30-foot radius centered on yourself. For 1 minute, this area becomes covered in a slick layer of ice, turning it into difficult terrain.",
+				"When a creature (other than you) starts its turn in the affected area or enters it for the first time on its turn, it must succeed on a Dexterity saving throw against your spell save DC or fall prone. If a creature falls prone as a result of this effect, it also immediately takes damage from your Creeping Frost feature."
+			]
+		},
+		{
+			"name": "Channel Divinity: Binding of the Deep",
+			"source": "mrhbfd",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "mrhbfd",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you can use your Channel Divinity to chain demons to your will. When you cast a spell that summons demons, you present your holy symbol and use your Channel Divinity to bind them. Any demons bound in this way cannot break free from your control, and are never hostile towards you or your allies. The binding ends when you die."
+			]
+		},
+		{
+			"name": "Demonic Ascendancy",
+			"source": "mrhbfd",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "mrhbfd",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"When you reach 17th level, you infuse your soul with demonic energy, gaining immense power. You have resistance to cold, fire and lightning damage, and gain telepathy with a range of 120 feet."
+			]
+		}
+	]
+}

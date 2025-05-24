@@ -1,0 +1,217 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BRAWL-MHB",
+				"abbreviation": "MHB",
+				"full": "Path of the Brawler",
+				"authors": [
+					"Marrix"
+				],
+				"version": "2021.06.29",
+				"color": "c8a06c",
+				"targetSchema": "1.0"
+			}
+		],
+		"dateAdded": 1704461796,
+		"dateLastModified": 1729630006,
+		"_dateLastModifiedHash": "f4ed72b25c",
+		"edition": "classic"
+	},
+	"subclass": [
+		{
+			"name": "Path of the Brawler",
+			"source": "BRAWL-MHB",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"page": 0,
+			"shortName": "Brawler",
+			"subclassFeatures": [
+				"Path of the Brawler|Barbarian|PHB|Brawler|MHB|3|BRAWL-MHB",
+				"Drunkard|Barbarian|PHB|Brawler|MHB|3|BRAWL-MHB",
+				"Improvise Expert|Barbarian|PHB|Brawler|MHB|3|BRAWL-MHB",
+				"Barbrawler|Barbarian|PHB|Brawler|MHB|3|BRAWL-MHB",
+				"Break|Barbarian|PHB|Brawler|MHB|3|BRAWL-MHB",
+				"Inspiring Rythem|Barbarian|PHB|Brawler|MHB|6|BRAWL-MHB",
+				"Echoing Triumph|Barbarian|PHB|Brawler|MHB|6|BRAWL-MHB",
+				"The Art of Flying Blades|Barbarian|PHB|Brawler|MHB|14|BRAWL-MHB"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Brawler",
+			"source": "BRAWL-MHB",
+			"page": 0,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Brawler",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Barbarians of the Path of the Brawler infuse their voice with the magic to inspire others to feats of heroism. Rather than use their abilities to empower themselves, they bring out the best in their allies. For some Barbarians of this College, their days of gallantry are long behind them. For others, they lead allies from the front with magic that uplifts and protects."
+			]
+		},
+		{
+			"name": "Drunkard",
+			"source": "BRAWL-MHB",
+			"page": 0,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Brawler",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You also gain proficiency in either Athletics or Intimidation (your choice).",
+				{
+					"type": "list",
+					"items": [
+						"Improvised Weapons you wield deal an additional damage die."
+					]
+				},
+				"Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit and you gain proficiency with Improvised Weapons.",
+				""
+			]
+		},
+		{
+			"name": "Improvise Expert",
+			"source": "BRAWL-MHB",
+			"page": 0,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Brawler",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"When you wield an improvised weapon while raging, it uses one of the following stat profiles, determined by its size and shape. The DM decides which category best fits the object:",
+				
+				"{@b {@i Small (1d4)}} {@i Properties:} {@itemProperty L|XPHB|Light}, {@itemProperty T|XPHB|Thrown} (Range 20/60)",
+				"{@b Examples:} Mug, plate, shoe, tankard, wrench. When you throw it, you add your rage damage bonus to the damage roll.",
+
+				"In addition, the improvised weapon gains up to two traits from the Improvised Weapon Traits table, chosen by the DM."
+			]
+		},
+		{
+			"name": "Barbrawler",
+			"source": "BRAWL-MHB",
+			"page": 0,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Brawler",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Your tavernside scuffles have honed your ability to deal damage with just about anything that's handy. You gain the following benefits when wielding Improvised Weapons:",
+				{
+					"type": "list",
+					"items": [
+						"Improvised Weapons you wield gain up to two traits from the list below (chosen by the DM, based on the object used)."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Improvised Weapon Traits",
+					"colLabels": [
+						"Trait",
+						"Effect"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"Smashing",
+							"{@b Healing}. When you use the Break feature with this weapon, the target makes their saving throw with disadvantage and you can treat any 1 or 2 on a damage die as a 3."
+						],
+						[
+							"Sweeping",
+							"{@b Swiftness}. When you hit a creature with this weapon, you can deal half the damage rolled to a second creature within 5 feet of the original target, provided that creature is within the weapons reach and the attack would have hit it."
+						],
+						[
+							"Unstable",
+							"{@b Bottles, Lanterns}. When you roll a 1 on an attack roll with this weapon, it backfires, dealing half the damage as if you used the break feature to yourself. On a 20, you automatically use the break feature with it, without spending a resource for it."
+						],
+						[
+							"Noisy",
+							"{@b Pans, pots, bells}. Once per turn, when you hit a creature with this weapon, it makes a loud noise. The creature has disadvantage on their next attack until end of their next turn."
+						],
+						[
+							"Entangle",
+							"On a hit, if the target is Large or smaller, you can choose to have it become {@condition grappled|xphb|grappled} (escape DC = your Brawler DC). While grappling a creature this way, you can't make attacks with this weapon. If you score a critical hit, the target is also {@condition restrained|xPHB|restrained} for the duration of the grapple."
+						],
+						[
+							"Test",
+							"{@b Transformation}. The drinker's bod"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Break",
+			"source": "BRAWL-MHB",
+			"page": 0,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Brawler",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"While you’re raging, you can shatter an improvised weapon as part of a melee attack to deal extra damage.",
+				"When you hit a creature with a melee attack using an improvised weapon, you can choose to break the weapon. If you do, roll a number of d6s equal to your Rage Damage bonus and add the total to the damage of the attack. The weapon is then destroyed and can’t be used again.",
+				"You can use this feature twice per rage, and you regain all expended uses when you enter a new rage."
+			]
+		},
+		{
+			"name": "Inspiring Rythem",
+			"source": "BRAWL-MHB",
+			"page": 0,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Brawler",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You learn three spells of your choice that qualify for the Barbrawler feature. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof (see a class's section for its spell list). A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the Barbarian Features table.",
+				"You always have the chosen spells prepared, and whenever you gain a Barbarian level, you can replace one of the spells with another spell that meets these requirements."
+			]
+		},
+		{
+			"name": "Echoing Triumph",
+			"source": "BRAWL-MHB",
+			"page": 0,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Brawler",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Flavor text here. Whenever you or an ally within 30 feet of you rolls a 20 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to regain one expended use of your Barbarianic Inspiration feature.",
+				"As part of the same reaction, you may instead choose to grant Barbarianic Inspiration to a creature within 60 feet who can hear or see you, rather than regaining the expended use."
+			]
+		},
+		{
+			"name": "The Art of Flying Blades",
+			"source": "BRAWL-MHB",
+			"page": 0,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassSource": "MHB",
+			"subclassShortName": "Brawler",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, your weapon attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+				"In addition, you can use Inspiring Rythem as a 3rd level spell without expending a spell slot."
+			]
+		}
+	]
+}

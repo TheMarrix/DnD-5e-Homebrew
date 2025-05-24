@@ -1,0 +1,205 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "DWsorc",
+				"abbreviation": "MHB",
+				"full": "Dreamweaver Sorcerer",
+				"authors": [
+					"Marrix"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.0.0",
+				"color": "940101"
+			}
+		],
+		"dateAdded": 1650130290,
+		"dateLastModified": 1706587640,
+		"_dateLastModifiedHash": "ce01d5e327"
+	},
+	"subclass": [
+		{
+			"name": "Dreamweaver",
+			"subclassFeatures": [
+				"Dreamweaver|Sorcerer||Dreamweaver|DWsorc|1",
+				"Dreamer's Intuition|Sorcerer||Dreamweaver|DWsorc|6",
+				"Nocturne|Sorcerer||Dreamweaver|DWsorc|6",
+				"Misty Escape|Sorcerer||Dreamweaver|DWsorc|14",
+				"Vampiric Mastery|Sorcerer||Dreamweaver|DWsorc|18"
+			],
+			"source": "DWsorc",
+			"shortName": "Dreamweaver",
+			"subclassSpells": [
+				"Dissonant Whispers",
+				"Sleep|phb",
+				"Calm Emotions",
+				"Phantasmal Force",
+				"Catnap",
+				"Hypnotic Pattern",
+				"Guardian of Faith",
+				"Phantasmal Killer",
+				"Dream",
+				"Modify Memory"
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Dreamweaver",
+			"source": "DWsorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Dreamweaver",
+			"subclassSource": "DWsorc",
+			"level": 1,
+			"entries": [
+				"Dreamweavers draw their power from the ethereal realm of dreams and the subconscious. Their magic is rooted in the mysteries of sleep, lucid dreaming, and the connection between mind and body. Through their innate connection to the dream world, they can put others to sleep, communicate across long distances and shape the dreams of others into pleasant dreams or awful nightmares.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dreamer Spells|Sorcerer||Dreamweaver|DWsorc|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lucid Dreamer|Sorcerer||Dreamweaver|DWsorc|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Slumbering Spell|Sorcerer||Dreamweaver|DWsorc|1"
+				}
+			]
+		},
+		{
+			"name": "Dreamer Spells",
+			"entries": [
+				"You learn additional spells when you reach certain levels in this class, as shown on the Dreamer Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				"When you cast any spell of 1st level or higher from your Dreamer Spells feature, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell's level.",
+				{
+					"type": "table",
+					"caption": "Dreamweaver Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Dissonant Whispers}, {@spell Sleep|phb}"
+						],
+						[
+							"3rd",
+							"{@spell Calm Emotions}, {@spell Phantasmal Force}"
+						],
+						[
+							"5th",
+							"{@spell Catnap|xge}, {@spell Hypnotic Pattern}"
+						],
+						[
+							"7th",
+							"{@spell Guardian of Faith}, {@spell Phantasmal Killer}"
+						],
+						[
+							"9th",
+							"{@spell Dream}, {@spell Modify Memory}"
+						]
+					]
+				}
+			],
+			"source": "DWsorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Dreamweaver",
+			"subclassSource": "DWsorc",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Lucid Dreamer",
+			"source": "DWsorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Dreamweaver",
+			"subclassSource": "DWsorc",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Magic can’t put you to sleep, and you automatically succeed on saving throws against the Dream spell and similar effects. Your dreams are always lucid, so you are aware you’re dreaming and retain control of yourself during the dream. While asleep, you also remain vaguely aware of your surroundings in the real world, but any Perception checks you make have disadvantage."
+			]
+		},
+		{
+			"name": "Slumbering Spell",
+			"source": "DWsorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Dreamweaver",
+			"subclassSource": "DWsorc",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you roll a 20 on the die with an attack roll using a Sorcerer spell, you can forgo the extra damage to lull the target into magical slumber. The target must make a Wisdom saving throw against your spell save DC or fall {@condition Unconscious} for 1 minute, as if affected by the Sleep spell. The creature wakes if it takes damage or another creature uses an action to wake it.",
+				"Additionally, creatures that are {@condition Unconscious} automatically fail their saving throws against your Sorcerer spells."
+			]
+		},
+		{
+			"name": "Dreamer's Intuition",
+			"source": "DWsorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Dreamweaver",
+			"subclassSource": "DWsorc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Your dreamy senses extend beyond sleep. As a result, whenever you make a Insight or Perception check, you gain a bonus to the check equal to your Charisma modifier (minimum of +1)."
+			]
+		},
+		{
+			"name": "Nocturne",
+			"source": "DWsorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Dreamweaver",
+			"subclassSource": "DWsorc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Whenever you finish a Short Rest, you can cast Sending without a spell slot or spell components. Narratively, you cast the spell while sleeping, though you still gain the benefits of the Short Rest. If the target is asleep at any time during your Short Rest, or the next time they sleep, you appear in their dreams to deliver your message. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+				"Starting at Sorcerer level 9, you can also cast either Divination, Dream or Scrying this way, but only during a Long Rest. For Dream you can only use yourself as the messenger."
+			]
+		},
+		{
+			"name": "Misty Escape",
+			"source": "DWsorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Dreamweaver",
+			"subclassSource": "DWsorc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"As a reaction to when you are reduced to 0 hit points, but not killed outright, you can turn into a cloud of mist, reappearing with 1 hit point in an unoccupied space within 30 feet.",
+				"Once you use this reaction you must finish a short or long rest before you can use it again. When you have no uses left, you can spend 5 Sorcery Points to use this reaction again."
+			]
+		},
+		{
+			"name": "Vampiric Mastery",
+			"source": "DWsorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Dreamweaver",
+			"subclassSource": "DWsorc",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"You have mastered the sinister power of your Sorcery. When you deal necrotic damage to a creature with a Sorcerer spell of 1st-level or higher, you can gain temporary hit points equal to half the necrotic damage dealt.",
+				"These temporary hit points can also be used for your Lucid Dreamer Spellcasting in place of your current hit points."
+			]
+		}
+	]
+}

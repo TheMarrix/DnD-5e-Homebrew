@@ -1,0 +1,271 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ARCH-MHB",
+				"abbreviation": "MHB",
+				"full": "The Archivist Artificer Subclass",
+				"authors": [
+					"Marrix"
+				],
+				"version": "1.0.0"
+			}
+		],
+		"edition": "classic",
+		"status": "ready",
+		"dateAdded": 1733832887,
+		"dateLastModified": 1733832887,
+		"_dateLastModifiedHash": "fe684065b0"
+	},
+	"subclass": [
+		{
+			"name": "Archivist",
+			"shortName": "Archivist",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"page": 14,
+			"edition": "classic",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"comprehend languages",
+							"magic missile"
+						],
+						"5": [
+							"detect thoughts",
+							"hold person"
+						],
+						"9": [
+							"counterspell",
+							"sending"
+						],
+						"13": [
+							"banishment",
+							"dimension door"
+						],
+						"17": [
+							"circle of power",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Archivist|Artificer|TCE|Archivist|ARCH-MHB|3|ARCH-MHB",
+				"Death Lightning|Artificer|TCE|Archivist|ARCH-MHB|5|ARCH-MHB",
+				"Overclock|Artificer|TCE|Archivist|ARCH-MHB|9|ARCH-MHB",
+				"Scribe Expert|Artificer|TCE|Archivist|ARCH-MHB|9|ARCH-MHB",
+				"Flesh Titan|Artificer|TCE|Archivist|ARCH-MHB|15|ARCH-MHB"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Archivist",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "ARCH-MHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"An artificer who specializes as an Archivist crafts magical blueprints to broaden their spell repertoire. By studying spell scrolls with a device known as the Arcane Codex, they unravel each spell’s formula into a blueprint and forge ingenious devices that reproduce the spell’s effects.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tool Proficiency|Artificer|TCE|Archivist|ARCH-MHB|3|ARCH-MHB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Archivist Spells|Artificer|TCE|Archivist|ARCH-MHB|3|ARCH-MHB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Codex|Artificer|TCE|Archivist|ARCH-MHB|3|ARCH-MHB"
+				}
+			]
+		},
+		{
+			"name": "Archivist Spells",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "ARCH-MHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You always have certain spells prepared after you reach particular levels in this class, as shown in the Archivist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.",
+				{
+					"type": "table",
+					"caption": "Archivist Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell comprehend languages}, {@spell magic missile}"
+						],
+						[
+							"5th",
+							"{@spell detect thoughts}, {@spell hold person}"
+						],
+						[
+							"9th",
+							"{@spell counterspell}, {@spell sending}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell circle of power}, {@spell hold monster}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Archivist Spells",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "ARCH-MHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You always have certain spells prepared after you reach particular levels in this class, as shown in the Archivist Spell table. These spells count as Artificer spells for you, but they don't count against the number of Artificer spells you prepare.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Archivist Spells|Artificer|TCE|Archivist|ARCH-MHB|3|ARCH-MHB"
+				}
+			]
+		},
+		{
+			"name": "Tool Proficiency",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "ARCH-MHB",
+			"level": 3,
+			"skillProficiencies": [
+				{
+					"medicine": true
+				},
+				{
+					"any": 1
+				}
+			],
+			"header": 2,
+			"entries": [
+				"You gain proficiency with {@item cartographer's tools|PHB}. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.",
+				"In addition, when you scribe a spell scroll using the {@variantrule Downtime Activity: Scribing a Spell Scroll|XGE|Scribing a Spell Scroll} crafting rules, the gold cost and time required to craft it is halved."
+			]
+		},
+		{
+			"name": "Arcane Codex",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "ARCH-MHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You assemble an Arcane Codex, a scribing device used for transcribing spells into blueprints. You choose its form and materials, perhaps twin crystal slates that revolve like lenses, a rack of clockwork punch cards, or another invention of your own design. When you obtain a spell scroll, you can use your Arcane Codex to transcribe its magic into a blueprint that you can use for casting the spell using the following rules:",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"entries": [
+								"The spell must not appear on the artificer spell list, and it must be of a level for which you have spell slots."
+							]
+						},
+						{
+							"type": "item",
+							"entries": [
+								"Transcribing a spell scroll into a blueprint takes time. The work takes 2 hours and 50 gp per spell level, after which you must make an Intelligence (Arcana) check against a DC of 10 + the spell’s level. On a success, the blueprint is completed. On a failure, the attempt is wasted. In either case, the original spell scroll is consumed in the process. You can also copy a blueprint you already possess. Crafting a duplicate takes 1 hour and 10 gp per spell level and requires no ability check."
+							]
+						},
+						{
+							"type": "item",
+							"entries": [
+								"A blueprint counts as an artificer spell for you, and you can prepare its spell during a long rest just like any other artificer spell, provided the blueprint is in your possession during the long rest. If a blueprint is lost or destroyed, you can’t prepare that spell again until you craft a new blueprint for it."
+							]
+						}
+					]
+				},
+			"You are the only creature that can operate your codex. If your Arcane Codex is lost or destroyed, you can reproduce it during a long rest by spending 100 gp in materials."
+			]
+		},
+		{
+			"name": "Death Lightning",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "ARCH-MHB",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"You learn to interweave necrotic and electrical energies. Whenever you cast a spell that deals Necrotic damage, you can choose to have it deal Lightning damage instead and vice versa.",
+				"In addition, the legions you raise can act as catalysts for your spells. When you cast a spell with a range of touch, choose one of your zombies within 100 feet of you; it can deliver the spell as if it had cast the spell. Your zombie must use its Reaction to deliver the spell when you cast it."
+			]
+		},
+		{
+			"name": "Overclock",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "ARCH-MHB",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"Starting at 9th level, when you cast an artificer spell, you can do so as if the spell was cast using a spell slot two levels higher than the spell slot you expend.",
+				"You can use this feature a number of times equal to your Intelligence modifier (minimum of 1). You regain all expended uses after you finish a long rest."
+			]
+		},
+		{
+			"name": "Scribe Expert",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "ARCH-MHB",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"Starting at 9th level, when you scribe a spell scroll, you may inscribe the spell one slot level higher than the spell’s base level without increasing the gold piece cost or time required for scribing.",
+				"Example: if you scribe a fireball scroll (a 3rd‑level spell), the finished scroll casts fireball as if from a 4th‑level slot, dealing 9d6 damage instead of 8d6."
+			]
+		},
+		{
+			"name": "Flesh Titan",
+			"source": "ARCH-MHB",
+			"className": "Artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "ARCH-MHB",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You've perfected a volatile combination of electrical shocks and enhancement serums. As an action, you can inject a zombie under your control within 5 feet of you with this unstable mixture, causing its flesh to swell and crackle with intense electrical energy. It becomes a {@creature Flesh Golem} for 1 minute, but still benefits from any of your features that affect zombies.",
+				"At the end of the minute, or when it reaches 0 Hit Points, it dies in an explosion of lightning. Each creature within a 20-foot radius centered from the flesh golem must succeed on a Constitution saving throw against your spell save DC or take {@damage 4d8} Lightning damage.",
+				"Once you've used this feature, you can't use it again until you finish a Long Rest or expend a spell slot of level 5 or higher to use it again."
+			]
+		}
+	]
+}

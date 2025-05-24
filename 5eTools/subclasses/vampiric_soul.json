@@ -1,0 +1,220 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLVampSorc",
+				"abbreviation": "LLVAMPIRICSOUL",
+				"full": "Vampiric Soul Sorcerer",
+				"authors": [
+					"laserllama"
+				],
+				"version": "1.0",
+				"url": "https://www.gmbinder.com/share/-MWa3aHZKVKLDoOH-rEx",
+				"targetSchema": "1.0.0",
+				"color": "940101"
+			}
+		],
+		"dateAdded": 1650130290,
+		"dateLastModified": 1706587640,
+		"_dateLastModifiedHash": "ce01d5e327"
+	},
+	"subclass": [
+		{
+			"name": "Vampiric Soul",
+			"subclassFeatures": [
+				"Vampiric Soul|Sorcerer||Vampiric Soul|LLVampSorc|1",
+				"Undead Resilience|Sorcerer||Vampiric Soul|LLVampSorc|6",
+				"Misty Escape|Sorcerer||Vampiric Soul|LLVampSorc|14",
+				"Vampiric Mastery|Sorcerer||Vampiric Soul|LLVampSorc|18"
+			],
+			"source": "LLVampSorc",
+			"shortName": "Vampiric Soul",
+			"subclassSpells": [
+				"command",
+				"inflict wounds",
+				"suggestion",
+				"spider climb",
+				"gaseous form",
+				"vampiric touch",
+				"blight",
+				"greater invisibility",
+				"dominate person",
+				"enervation|xge"
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Vampiric Soul",
+			"source": "LLVampSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Vampiric Soul",
+			"subclassSource": "LLVampSorc",
+			"level": 1,
+			"entries": [
+				"The dark magic of undeath is a path to great power for those willing to pay the price. Many powerful undead creatures will grant their followers a portion of their dark sorcery in return for their service. Evil vampires, long-dead mummy lords, and sinister liches have all been known to curse their most loyal followers with the powers of Vampiric Soul.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vampiric Spells|Sorcerer||Vampiric Soul|LLVampSorc|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Optional Rule: True Vampirism|Sorcerer||Vampiric Soul|LLVampSorc|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blood Magic|Sorcerer||Vampiric Soul|LLVampSorc|1"
+				}
+			]
+		},
+		{
+			"name": "Vampiric Spells",
+			"entries": [
+				"You learn additional spells when you reach certain levels in this class, as shown on the Vampiric Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				"Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an {@filter enchantment or a necromancy spell from the sorcerer, warlock, or wizard spell list|spells|class=sorcerer;warlock;wizard|school=E;N|level=1;2;3;4;5}.",
+				{
+					"type": "table",
+					"caption": "Vampiric Soul Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell command|phb}, {@spell inflict wounds}"
+						],
+						[
+							"3rd",
+							"{@spell suggestion|phb}, {@spell spider climb|phb}"
+						],
+						[
+							"5th",
+							"{@spell gaseous form|phb}, {@spell vampiric touch|phb}"
+						],
+						[
+							"7th",
+							"{@spell blight|phb}, {@spell greater invisibility|phb}"
+						],
+						[
+							"9th",
+							"{@spell dominate person|phb}, {@spell enervation|xge}"
+						]
+					]
+				}
+			],
+			"source": "LLVampSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Vampiric Soul",
+			"subclassSource": "LLVampSorc",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "inset",
+			"name": "Optional Rule: True Vampirism",
+			"entries": [
+				"To play as a true vampire, you gain all the features below as part of your Vampiric Soul:",
+				{
+					"type": "entries",
+					"name": "Deathless Nature",
+					"entries": [
+						"You gain the undead creature type and you no longer need to breathe, eat, or drink in order to survive."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spider Climb",
+					"entries": [
+						"You gain a climbing speed equal to your walking speed. You can use this speed to walk up walls and on ceilings while your hands are free."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Superior Darkvision",
+					"entries": [
+						"You gain darkvision out to a 120-foot radius, unless your darkvision was further."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sunlight Hypersensitivity",
+					"entries": [
+						"You are vulnerable to radiant damage, and have disadvantage on all attack rolls and ability checks while in direct sunlight."
+					]
+				}
+			],
+			"source": "LLVampSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Vampiric Soul",
+			"subclassSource": "LLVampSorc",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Blood Magic",
+			"entries": [
+				"You can sacrifice your very life force to fuel your dark sorcery. Whenever you would expend Sorcery Points, you can choose to spend your hit points instead. When you do so, reduce both your current and maximum hit points by 2 for each Sorcery Point you would have spent. All reductions to your maximum hit points are restored at the end of your next long rest.",
+				"Also, whenever you slay a creature with a Sorcerer spell of 1st-level or higher, you gain temporary hit points equal to the level of that spell. Temporary hit points from this feature can be used in place of your current hit points (but not maximum hit points) as fuel for your Blood Magic Spellcasting."
+			],
+			"source": "LLVampSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Vampiric Soul",
+			"subclassSource": "LLVampSorc",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Undead Resilience",
+			"source": "LLVampSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Vampiric Soul",
+			"subclassSource": "LLVampSorc",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You gain resistance to both necrotic and poison damage, and you are immune to the Poisoned condition.",
+				"Also, when you have temporary hit points from your Blood Magic feature, you are resistant to bludgeoning, piercing, and slashing damage from non-magical, non-silvered, attacks."
+			]
+		},
+		{
+			"name": "Misty Escape",
+			"source": "LLVampSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Vampiric Soul",
+			"subclassSource": "LLVampSorc",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"As a reaction to when you are reduced to 0 hit points, but not killed outright, you can turn into a cloud of mist, reappearing with 1 hit point in an unoccupied space within 30 feet.",
+				"Once you use this reaction you must finish a short or long rest before you can use it again. When you have no uses left, you can spend 5 Sorcery Points to use this reaction again."
+			]
+		},
+		{
+			"name": "Vampiric Mastery",
+			"source": "LLVampSorc",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Vampiric Soul",
+			"subclassSource": "LLVampSorc",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"You have mastered the sinister power of your Sorcery. When you deal necrotic damage to a creature with a Sorcerer spell of 1st-level or higher, you can gain temporary hit points equal to half the necrotic damage dealt.",
+				"These temporary hit points can also be used for your Blood Magic Spellcasting in place of your current hit points."
+			]
+		}
+	]
+}

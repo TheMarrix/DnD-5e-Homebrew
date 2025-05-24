@@ -1,0 +1,62 @@
+				{
+					"type": "entries",
+					"name": "Nagavarii Lineage",
+					"entries": [
+						"You belong to a distinct lineage that grants you unique abilities. Choose a lineage from the Lineages table. You can use your lineage’s bonus action ability a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+						{
+							"type": "table",
+							"caption": "Nagavarii Lineages",
+							"colLabels": [
+								"Lineage",
+								"Features"
+							],
+							"colStyles": [
+								"col-2",
+								"col-6"
+							],
+							"rows": [
+								[
+									"Constrictor",
+									"You can use your bonus action to attempt to {@action grapple} a creature. At the start of each of your turns, you can deal {@damage 1d6} + your Strength modifier bludgeoning damage to a creature grappled by you."
+								],
+								[
+									"Swifttail",
+									"You can use your bonus action to take the {@action dash} action. When you take the {@action dash} action, opportunity attacks made against you have disadvantage until the start of your next turn."
+								],
+								[
+									"Venomfang",
+									"You can use your bonus action to make an unarmed strike with your fangs that deals {@damage 1d4} + your Strength modifier piercing damage. On a hit, the target is {@condition poisoned} for 1 minute and can make a Constitution saving throw at the end of each of its turns (DC = 8 + your proficiency bonus + your Constitution modifier) to end the effect early. You also have resistance to poison damage and advantage on saving throws against being {@condition poisoned}."
+								]
+							]
+						}
+					]
+				},
+
+
+
+
+
+
+The Nagavarii, a mystical race of sentient serpents, hailing from the forests of the Feywild, a place teeming with magic and vibrant life. Driven by their natural instincts,
+they collect and hoard all things magical, seeking enchanted artifacts and potent relics to use in their rituals to lengthen their lifespan.
+
+
+
+While their roots lie in the Feywild's lush groves and hidden enclaves, many Nagavarii have ventured into the Material Plane, drawn by the promise of new opportunities and a desire to escape the chaotic nature of their homeland.
+In their new environments, they seek out similar forested habitats, where they can thrive and continue their traditions of magic and mysticism.
+
+
+
+
+
+
+
+
+
+
+The Nagavarii, a mystical race of sentient serpents, originate from the magic-infused forests of the Feywild. Compelled by instinct, they gather and guard all kinds of magical objects, 
+using them in ancient rituals to extend their lives. With their agile tails, they skillfully wield weapons and tools, defending themselves against the dangers of their realm.
+
+
+Mysterious and enchanting, the Nagavarii are a race of sentient serpents that originate from the vibrant forests of the Feywild, a realm overflowing with magic and natural wonder.
+Driven by instinct, they collect and hoard magical artifacts and relics to use in rituals aimed as a sacrifice to their god in exchange for extending their lifespans. As they navigate their surroundings, they wield weapons and tools skillfully with their flexible tails, defending themselves against threats both mundane and magical.
